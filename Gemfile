@@ -41,6 +41,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'figaro'
+gem 'leaflet-rails'
 
 group :production do
   gem 'pg'
