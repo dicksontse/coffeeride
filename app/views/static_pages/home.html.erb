@@ -1,6 +1,10 @@
 <div id="map">
-  <%= map(:center => {
-    :latlng => [37.7500, -122.2833],
-    :zoom => 10
-  }) %>
+  <%= 
+      map(:center => {
+          :latlng => [37.7500, -122.2833],
+          :zoom => 10
+        },
+        :markers => @ride_markers
+      ) 
+  %>
 </div>
