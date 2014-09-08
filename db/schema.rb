@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140908014235) do
+ActiveRecord::Schema.define(version: 20140908022130) do
 
   create_table "rides", force: true do |t|
     t.string   "name"
@@ -24,13 +24,13 @@ ActiveRecord::Schema.define(version: 20140908014235) do
     t.string   "country"
     t.float    "longitude"
     t.float    "latitude"
-    t.boolean  "monday"
-    t.boolean  "tuesday"
-    t.boolean  "wednesday"
-    t.boolean  "thursday"
-    t.boolean  "friday"
-    t.boolean  "saturday"
-    t.boolean  "sunday"
+    t.boolean  "monday",      default: false
+    t.boolean  "tuesday",     default: false
+    t.boolean  "wednesday",   default: false
+    t.boolean  "thursday",    default: false
+    t.boolean  "friday",      default: false
+    t.boolean  "saturday",    default: false
+    t.boolean  "sunday",      default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
